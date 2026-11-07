@@ -345,7 +345,7 @@ if (requireNamespace("ggplot2", quietly = TRUE)) {
     geom_line(linewidth = 0.8) + geom_point(size = 1.4) +
     facet_grid(component ~ snr_lab, scales = "free_y") +
     labs(x = "# extra noise features (q)", y = NULL, colour = NULL,
-         title = "Covariance floor vs resolution as noise features are added",
+         title = "Covariance floor, resolution, test error as noise features are added",
          subtitle = sprintf("%s\nn = %d, p = %d, r = %.2f, R = %d, B = %d, %d X draws",
                             mode_note, cfg$n, cfg$p, cfg$r_corr, cfg$R, cfg$B, cfg$n_X)) +
     theme_bw() + theme(legend.position = "bottom")
